@@ -51,6 +51,13 @@ Nothing else yet. No code, no infra, no eval harness.
 user wants more design talk before any code is written. Open
 `SystemInstruction.md` and `Discussion1.md` to recover context.
 
+**Pluggability principle (added end of day 1):** every subsystem with
+more than one realistic implementation must be behind a thin
+interface, selected by configuration, and addable without touching
+callers. Pattern, anti-patterns, and acceptance test documented in
+`SystemInstruction.md` §10 and reflected in `Architecture.md` as
+design principle #8.
+
 
 ## What's next (the actual first step)
 

@@ -58,6 +58,16 @@ LocalRAG1 is the *kernel*; CB is the *operating system* built around it.
    were queried, which candidates were returned, which were filtered by
    ACL, which were reranked, which were cited, what the LLM said, what
    the user clicked. No black boxes.
+8. **Every subsystem with more than one realistic implementation is
+   pluggable** — behind a thin interface, selected by configuration,
+   addable without touching callers. Lexical index, vector index,
+   graph index, reranker, LLM, every input source, embedder, object
+   store, identity provider — all swappable via a config value.
+   See [`SystemInstruction.md`](./SystemInstruction.md) §10 for the
+   pattern, registry structure, and the explicit anti-patterns to
+   avoid. The rule of thumb: if a second implementation can be added
+   only by editing the caller, the design is wrong — refactor to a
+   Protocol first.
 
 ---
 
