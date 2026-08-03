@@ -63,11 +63,11 @@ LocalRAG1 is the *kernel*; CB is the *operating system* built around it.
    addable without touching callers. Lexical index, vector index,
    graph index, reranker, LLM, every input source, embedder, object
    store, identity provider — all swappable via a config value.
-   See [`SystemInstruction.md`](./SystemInstruction.md) §10 for the
-   pattern, registry structure, and the explicit anti-patterns to
-   avoid. The rule of thumb: if a second implementation can be added
-   only by editing the caller, the design is wrong — refactor to a
-   Protocol first.
+   See [`DesignPrinciples.md`](./DesignPrinciples.md) for the
+   pattern, registry structure, per-subsystem pluggability table,
+   anti-patterns, and the four-question acceptance test. The rule
+   of thumb: if a second implementation can be added only by editing
+   the caller, the design is wrong — refactor to a Protocol first.
 
 ---
 
