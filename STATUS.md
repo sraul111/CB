@@ -29,8 +29,28 @@
 | — | Architecture document | `Architecture.md` |
 | — | Project README | `README.md` |
 | — | This status file | `STATUS.md` |
+| — | Discussion 1 — single-PC test plan + synthetic-data strategy | `Discussion1.md` |
+| — | Standing working agreement (commit-don't-push, crisp answers) | `SystemInstruction.md` |
+| — | Repo created and pushed on GitHub | `sraul111/CB` (private) |
 
 Nothing else yet. No code, no infra, no eval harness.
+
+## End-of-day handoff (this session)
+
+- Architecture validated against the standard RAG course diagram — no
+  changes needed; the course diagram is a subset of the design.
+- `Discussion1.md` written: how to test the architecture on a single
+  PC, including the synthetic-data plan (M365 Developer Sandbox +
+  seed-and-multiply Python script for Jira/Slack/Confluence).
+- `SystemInstruction.md` written: standing rules — I commit, user
+  pushes; crisp answer style; session-start checklist.
+- Repo pushed to `https://github.com/sraul111/CB` manually by the
+  user after the initial commit landed locally.
+
+**First thing next session:** continue architecture discussion. The
+user wants more design talk before any code is written. Open
+`SystemInstruction.md` and `Discussion1.md` to recover context.
+
 
 ## What's next (the actual first step)
 
